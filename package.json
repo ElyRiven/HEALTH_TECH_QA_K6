@@ -1,0 +1,12 @@
+{
+  "name": "k6_template",
+  "version": "1.0.0",
+  "description": "Automation Exercise API - K6 Performance Tests",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
