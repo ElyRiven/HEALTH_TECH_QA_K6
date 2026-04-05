@@ -1,9 +1,11 @@
 {
-  "name": "k6_template",
+  "name": "health-tech-qa-k6",
   "version": "1.0.0",
-  "description": "Automation Exercise API - K6 Performance Tests",
+  "description": "HealthTech API - K6 Performance Tests",
   "scripts": {
-    "test": ""
+    "test:load:createPatient": "k6 run --out \"dashboard=export=results/patient-creation-report.html\" src/tests/patient-creation-load.js",
+    "test:load:getPatient": "k6 run --out \"dashboard=export=results/patient-get-report.html\" src/tests/patient-get-load.js",
+    "test:load:getPatients": "k6 run --out \"dashboard=export=results/patients-list-report.html\" src/tests/patients-list-load.js"
   },
   "keywords": [],
   "author": "",
