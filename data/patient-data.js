@@ -1,7 +1,7 @@
-const BASE_ID = Math.floor(Date.now() / 1000) % 10000;
-
 export function generatePatientData() {
-  const identificacion = BASE_ID * 100000 + __VU * 1000 + __ITER;
+  const vuPart = String(__VU).padStart(4, "0");
+  const iterPart = String(__ITER).padStart(6, "0");
+  const identificacion = `${vuPart}${iterPart}`;
 
   return {
     identificacion: identificacion,
